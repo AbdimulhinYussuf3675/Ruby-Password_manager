@@ -9,7 +9,7 @@ end
 def prompt_user_for_email
   puts 'Please sign in to continue'
   print 'Enter email: '
-  user_email = gets.chomp
+  gets.chomp
 end
 
 def verify_user_email(user_email)
