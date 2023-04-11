@@ -9,7 +9,7 @@ end
 def prompt_user_for_email
   puts 'Please sign in to continue'
   print 'Enter email: '
-  user_email = gets.chomp
+  gets.chomp
 end
 
 def verify_user_email(user_email)
@@ -42,7 +42,7 @@ def menu_options
   puts '3. Exit'
 end
 
-def get_user_meu_selection
+def put_user_meu_selection
   gets.chomp
 end
 
@@ -68,13 +68,13 @@ def set_new_service_name
   new_service
 end
 
-def set_username_for(service)
+def add_username_for(service)
   print 'Please enter the username of this service: '
   new_service_username = gets.chomp
   PASSWORD_STORE[service.to_sym][:username] = new_service_username
 end
 
-def set_password_for(service)
+def add_password_for(service)
   print 'Please enter the password for this new service: '
   new_service_password = gets.chomp
   PASSWORD_STORE[service.to_sym][:password] = new_service_password
