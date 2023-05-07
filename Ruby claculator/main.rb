@@ -4,4 +4,10 @@ num1 = gets.chomp.to_f
 puts 'Enter another number'
 num2 = gets.chomp.to_f
 
-puts(num1 + num2)
+def addition
+  num1 + num2
+end
+
+def subtractio
+  num1 - num2
+end
